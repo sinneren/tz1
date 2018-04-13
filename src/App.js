@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Switch, Route } from 'react-router-dom';
+
 import Home from './containers/Home';
 import News from './containers/News';
 import Profile from './containers/Profile';
 import Login from './containers/Login';
 import Menu from './components/Menu';
 import Header from './components/Header';
+
+import './App.css';
 
 class App extends Component {
   render() {

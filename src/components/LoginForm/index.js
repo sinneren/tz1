@@ -19,6 +19,8 @@ export default class LoginForm extends Component {
             this.setState({
                 err: false
             });
+            localStorage.setItem('auth', true);
+            window.location = '/profile';
         } else {
             this.setState({
                 err: true
