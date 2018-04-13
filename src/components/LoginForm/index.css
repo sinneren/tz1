@@ -24,3 +24,6 @@
 .btn:hover {
     background-color: #DDD;
 }
+.err-txt {
+    color: #FF0DD1;
+}
