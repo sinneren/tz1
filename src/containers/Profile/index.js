@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 
 export default class Profile extends Component {
     constructor(props) {
@@ -8,7 +9,7 @@ export default class Profile extends Component {
     componentWillMount() {
         this.authState = localStorage.getItem('auth');
         if (this.authState === 'false') {
-            window.location = '/login';
+            <Redirect to="/login" />
         }
     }
     render() {
